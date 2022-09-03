@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/scripts/main.js" defer ></script>
+</head>
+<body>
+    <div class="card picker">
+
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <div id="spanValues">
+            <span id="spanParagraph" class="bold display-6"></span>
+            <span id="spanParagraphLoss" class="bold display-6 link-danger"> -5 Fichas</span>
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+          </div>
+          <%- include('./pickCardValues.ejs')%>
+          <button id="buttonClick" onclick="pickCard()" class="btn btn-primary">Pick a card !</a>
+          <button id="buttonStop" class="btn btn-primary marginleft" onclick="stopPicking()">Detener</button>
+        </div>
+    </div>
+</body>
+</html>

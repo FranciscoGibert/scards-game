@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span class="spanHeight justify-content-center">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/png.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                Scards.game
+              </a>
+            </div>
+        </nav>
+    </span>
+    <section class="d-flex align-content-center">
+    <section class="d-flex justify-content-end h-100 w-100">
+        <span class="container flex-wrap">
+            <div id="" class="container d-flex justify-content-center "> 
+                <%- include('partials/stylesheet.ejs')%>
+            </div>
+            <div clss="container">
+                <div id="alertas" class="alert alert-dark" role="alert">
+                    Prueba tu suerte con Scards!
+                </div>
+                <div id="card-group-select" class="row justify-content-center ">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container margin">
+                    <%- include('partials/pickCard.ejs')%>
+                </div>
+                <footer class="bd-footer  py-4 py-md-5 mt-5 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex" style="height: 200px;">
+                                    <h1 class="display-1">Cómo jugar?</h1>    
+                                </div>
+                                <%- include('partials/howTo.ejs')%>
+                            </div>
+                        </div>
+                        <%- include('partials/howToInst.ejs')%>
+                    </div>
+                </footer>
+            </div>
+        </span>
+    </section>
+</section>
+</body>
+</html> 
+
+    
+    
